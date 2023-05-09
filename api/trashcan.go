@@ -1,7 +1,6 @@
 package api
 
 import (
-	"fmt"
 	"github.com/gin-gonic/gin"
 	"io/ioutil"
 	"log"
@@ -54,7 +53,6 @@ func DeviceStatus(c *gin.Context) {
 	if err != nil {
 		log.Println("err")
 	}
-	fmt.Printf("%s\n", string(b))
 	c.String(http.StatusOK, string(b))
 }
 

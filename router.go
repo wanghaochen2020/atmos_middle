@@ -31,7 +31,7 @@ func InitRouter() { //可以返回一个*gin.Engine
 	// 获取气象站数据路由
 	routers.AtmosphereDeviceRouter(r)
 	// 获取垃圾桶数据路由
-	routers.TrashCanRouter(r)
+	//routers.TrashCanRouter(r)
 
-	_ = r.Run(":7777")
+	_ = r.Run(":7766")
 }

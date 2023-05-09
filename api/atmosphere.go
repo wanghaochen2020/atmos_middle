@@ -21,8 +21,10 @@ func Atmosphere(c *gin.Context) {
 func AtmosphereHistory(c *gin.Context) {
 	facId := c.Query("facId")
 	// 参数中时间格式为:2022-05-05 10:00:00
-	startTime := trans(c.Query("startTime"))
-	endTime := trans(c.Query("endTime"))
+	//startTime := trans(c.Query("startTime"))
+	//endTime := trans(c.Query("endTime"))
+	startTime := c.Query("startTime")
+	endTime := c.Query("endTime")
 	b := getHistory(facId, startTime, endTime)
 	c.String(http.StatusOK, b)
 }

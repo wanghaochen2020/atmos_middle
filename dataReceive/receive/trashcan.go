@@ -10,7 +10,7 @@ import (
 )
 
 const (
-	baseUrl                    = "http://43.138.78.252:7777/"
+	baseUrl                    = "http://12.12.12.104:7766/"
 	getDeviceInfoUrl           = baseUrl + "api/trashcan/getDeviceInfo"
 	deviceStatusUrl            = baseUrl + "api/trashcan/deviceStatus"
 	deviceWarnUrl              = baseUrl + "api/trashcan/deviceWarn"
